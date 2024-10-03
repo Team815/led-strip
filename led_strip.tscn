@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://wgi3f840f240"]
+
+[ext_resource type="Script" path="res://led_strip.gd" id="1_vgxws"]
+
+[node name="LedStrip" type="HBoxContainer"]
+theme_override_constants/separation = 0
+script = ExtResource("1_vgxws")
+
+[connection signal="resized" from="." to="." method="_on_resized"]
